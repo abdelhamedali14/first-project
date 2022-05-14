@@ -1,0 +1,103 @@
+
+.main-color
+{
+    color: #e65f78;
+}
+
+:root{
+   --mainComlor:#e65f78;
+}
+/* start navbar */
+.nav-item .nav-link{
+    margin-left: 20px;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--mainComlor);
+}
+.navbar-light .navbar-nav .nav-link,.nav-icon a{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover,.nav-icon a:hover{
+    color: var(--mainComlor);
+}
+/* end navbar */
+
+/* ****** header *********** */
+header{
+    background-image: url(../images/1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.header-layer{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.header-img img{
+    width: 200px;
+    border: 10px solid rgba(255,255,255,.08);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.layer-caption h4::after{
+    content: "|";
+    animation: typing 8s infinite alternate ;
+}
+@keyframes typing{
+    0%{content:" |"}
+    3%{content:"p |"}
+    5%{content:"ph | "}
+    8%{content:"pho |"}
+    10%{content:" phot|"}
+    13%{content:"photo |"}
+    15%{content:"photog |"}
+    18%{content:"photogr |"}
+    20%{content:"photogra |"}
+    23%{content:"photograp |"}
+   25%{content:"photograph | "}
+    28%{content:"photographe |"}
+   30%{content:" photographer | "}
+   33%{content:"  | "}
+    35%{content:"F  |"}
+    38%{content:"Fr  |"}
+    40%{content:"Fre  |"}
+    43%{content:"Free  |"}
+    45%{content:"Freel  |"}
+    48%{content:"Frela  |"}
+    50%{content:"Frelanc  |"}
+    53%{content:"Freelance |"}
+    55%{content:"Freelancer |"}
+   58%{content:"  | "}
+    60%{content:"W  |"}
+    63%{content:"We  |"}
+    65%{content:"Web  |"}
+    68%{content:"WebD  |"}
+    71%{content:"WebDe   |"}
+    74%{content:"WebDev  |"}
+    77%{content:"WebDeve  |"}
+    81%{content:"WebDevel |"}
+    84%{content:"WebDevelo |"}
+    87%{content:"WebDevelop |"}
+    90%{content:"WebDevelope |"}
+   95%{content:"WebDeveloper |"}
+    100%{content:"  | "}
+
+}
+.header-icon{
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    animation: move 0.5s infinite alternate;
+}
+@keyframes move{
+    0%{ bottom: 0;}
+    20%{ bottom: 2%;}
+    40%{ bottom: 4%;}
+    60%{ bottom: 6%;}
+    80%{ bottom: 8;}
+    100%{ bottom: 10%;}
+}
+.setting-icon{
+    top: 25%;
+    background-color: #000000;
+}
+/* end header */
